@@ -1,3 +1,4 @@
+/* For Mobile and PC */
 nav{
     box-shadow: 1px 1px 5px  grey;
 }
@@ -18,9 +19,10 @@ header{
     align-items: center; 
 }
 .hero h1{
-    font-size: 60px;
+    text-align: center;
+    font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 500;
+    font-weight: 600;
 }
 .hero a{
     background: linear-gradient(to right, rgb(240, 44, 109), rgb(143, 45, 89));
@@ -29,6 +31,9 @@ header{
     color: white;
     border: none;
 }
+
+
+
 main .services{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -70,44 +75,49 @@ align-items: center;
 justify-content: center;
 padding: 10px;
 flex-direction: column;
+background-position: center;
+background-size: cover;
 }
 
- .flex{
-    display: flex;
-    padding: 30px 0;
-    
+.facts .group .ro1:hover{
+background: linear-gradient( rgba(240, 44, 109, 0.603), rgba(143, 45, 89, 0.685)), url("../images/1 (1).jpg");
 }
-.de{
-    box-sizing:content-box;
-    overflow: hidden;
-    align-items: center;
-
-    
+.facts .group .ro2:hover{
+    background: linear-gradient( rgba(240, 44, 109, 0.603), rgba(143, 45, 89, 0.685)), url("../images/1 (2).jpg");
 }
+.facts .group .ro3:hover{
+background: linear-gradient( rgba(240, 44, 109, 0.603), rgba(143, 45, 89, 0.685)), url("../images/1 (3).jpg");
 
+}
+.facts .group .ro4:hover{
+background: linear-gradient( rgba(240, 44, 109, 0.603), rgba(143, 45, 89, 0.685)), url("../images/1 (4).jpg");
+
+}
+.flex{
+    display: inline-flex;
+    padding: 25px 5px;
+    align-content: center;
+}
 .orient-hori{
-    transform: rotate(-90deg) ;
-    width: 35%;
-    height: fit-content;
-    text-align: center;
-    margin: 0 -30px;
-    font-family: 'Courier New', Courier, monospace;
+    transform: rotateZ(-90deg);
 }
-.orient-hori span{
-    border-bottom: 4px solid rgb(173, 3, 117);
-    padding: 0 6px;
+.orient-hori div{
+    border-bottom: 3px solid rgb(206, 1, 144);
+    width: max-content; 
 }
-
-
-
+.de h3{
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
 .choose-us{
     color: rgb(26, 25, 25);
 }
 .slide div .fa, .choose-us .fa{
     color:rgb(231, 22, 92);
 }
-.left{
-    width: 1000px;
+.left, .right{
+    width: 50%;
 }
 .right{
     padding: 25px 0;
@@ -191,7 +201,8 @@ padding: 20px 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
-.ports img{
+.ports img, .feeds img{
+    width: 100%;
     padding: 10px;
     border-radius: 20px;
 }
@@ -228,7 +239,9 @@ padding: 20px 0;
 .align-items{
     align-items: center;
 }
-
+.align-items-start{
+    align-items: flex-start;
+}
 .no-radius{
     border-radius: 0;
 }
@@ -291,6 +304,56 @@ a:hover{
     color: #fff;
     
 }
+.newslet form input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
 .dark{
     color: black;
+}
+
+@media screen and (max-width:700px){
+    main .services{
+        display: block;
+    
+    }
+    .services .service-group{
+        display: flex;
+        justify-content: unset;
+        align-items: center;
+        padding: 0 20px;
+        
+    }
+    .service-group i{
+        color:rgb(231, 22, 92);
+        padding-right: 15px ;
+    }
+    .flex-on{
+        
+        flex-direction: column;
+    }
+    .right, .left{
+        width: 100%;
+    }
+    
+    .slider {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 400px;
+        margin: auto;
+        overflow: hidden;
+    }
+    .feeds, .ports{
+        display: block;
+    }
+    
+    .newslet form{
+        display: flex;
+        flex-direction: column;
+        
+    } .newslet form input{
+        width: 100%;
+    }
 }
