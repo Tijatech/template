@@ -161,11 +161,17 @@ background: linear-gradient( rgba(240, 44, 109, 0.603), rgba(143, 45, 89, 0.685)
     
 }
 .orient-hori{
+<<<<<<< HEAD
     color: #666;
     font-family: inherit;
     font-size: 18px;
     letter-spacing: .2em;
     font-weight: 400;
+=======
+    transform: rotateZ(-90deg);
+    font-weight: 600;
+    font-family: cursive;
+>>>>>>> 3658523578bb3ae26918c4bc7207fd3fc0ba244c
 }
 .orient-hori div{
     
@@ -386,6 +392,7 @@ a:hover{
     display: flex;
     flex-direction: column;
 }
+<<<<<<< HEAD
 
     
 
@@ -396,6 +403,12 @@ a:hover{
     .sidebar{
         display: none;
     }
+=======
+
+    
+
+@media screen and (max-width:900px){
+>>>>>>> 3658523578bb3ae26918c4bc7207fd3fc0ba244c
     main .services{
         display: block;
     
