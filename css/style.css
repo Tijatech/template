@@ -67,6 +67,7 @@ header{
     font-size: 50px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    text-shadow: 1px 1px 5px #eee;
 }
 .hero a{
     font-family: "Roboto",sans-serif;
@@ -144,7 +145,7 @@ background: linear-gradient( rgba(240, 44, 109, 0.603), rgba(143, 45, 89, 0.685)
 
 }
 .flex{
-    display: inline-flex;
+    display: flex;
     padding: 25px 5px;
     align-content: center;
 }
@@ -161,17 +162,11 @@ background: linear-gradient( rgba(240, 44, 109, 0.603), rgba(143, 45, 89, 0.685)
     
 }
 .orient-hori{
-<<<<<<< HEAD
     color: #666;
     font-family: inherit;
     font-size: 18px;
     letter-spacing: .2em;
     font-weight: 400;
-=======
-    transform: rotateZ(-90deg);
-    font-weight: 600;
-    font-family: cursive;
->>>>>>> 3658523578bb3ae26918c4bc7207fd3fc0ba244c
 }
 .orient-hori div{
     
@@ -392,7 +387,6 @@ a:hover{
     display: flex;
     flex-direction: column;
 }
-<<<<<<< HEAD
 
     
 
@@ -403,12 +397,6 @@ a:hover{
     .sidebar{
         display: none;
     }
-=======
-
-    
-
-@media screen and (max-width:900px){
->>>>>>> 3658523578bb3ae26918c4bc7207fd3fc0ba244c
     main .services{
         display: block;
     
@@ -429,6 +417,13 @@ a:hover{
         display: flex;
         flex-direction: unset;
     }
+    .hero h1{
+        font-size: 36px;
+    }
+    .hero a{
+        font-size: 14px;
+        padding: 12px 30px;
+    }
     .flex-on{
         flex-direction: column;
     }
@@ -438,7 +433,15 @@ a:hover{
     .testi{
         width: 400px;
     }
-    
+    .facts .group .round{
+        width: 20px;
+        height: 20px;
+        padding: 90px;
+       
+        }
+   .facts .group .ro1,.facts .group .ro4{
+        padding: 80px;
+    }
     .slider {
        
         width: 400px;
